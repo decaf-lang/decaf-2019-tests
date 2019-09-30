@@ -2,9 +2,18 @@
 
 Test cases of the Decaf compiler PAs, for 2019 Fall.
 
-## Usage
+## Add to Your Decaf Project
 
-In your decaf project root, create a directory `TestCases/` and copy this repository into `TestCases/`.
+In your decaf project root, create a new folder `TestCases/`. In `TestCases/`, clone this repository:
+
+```sh
+cd TestCases/
+git clone https://github.com/decaf-lang/decaf-2019-TestCases
+```
+
+When new testcases are published, you simply sync your folder with `git pull`.
+
+## Running Tests
 
 If you are using the Scala version, make sure you set the correct `DECAF_JAR` in `testAll.py`.
 
