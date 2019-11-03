@@ -10,14 +10,14 @@ GLOBAL SCOPE:
             LOCAL SCOPE:
                 (6,13) -> variable x : string
                 (7,13) -> variable f : int => void
-                (7,17) -> lambda : int => void
-                FORMAL SCOPE:
+                (7,17) -> function lambda@(7,17) : int => void
+                FORMAL SCOPE OF 'lambda@(7,17)':
                     (7,25) -> variable @a : int
                     LOCAL SCOPE:
                         (8,17) -> variable y : string
                         (10,17) -> variable g : (string, string) => string
-                        (10,21) -> lambda : (string, string) => string
-                        FORMAL SCOPE:
+                        (10,21) -> function lambda@(10,21) : (string, string) => string
+                        FORMAL SCOPE OF 'lambda@(10,21)':
                             (10,32) -> variable @xx : string
                             (10,43) -> variable @yy : string
                             LOCAL SCOPE:
@@ -30,14 +30,14 @@ GLOBAL SCOPE:
                 (33,13) -> variable x : int[]
                 (34,13) -> variable m : class Main
                 (35,13) -> variable addx : () => void
-                (35,20) -> lambda : () => void
-                FORMAL SCOPE:
+                (35,20) -> function lambda@(35,20) : () => void
+                FORMAL SCOPE OF 'lambda@(35,20)':
                     <empty>
                     LOCAL SCOPE:
                         (37,17) -> variable y : int
                         (38,17) -> variable addy : int => void
-                        (38,24) -> lambda : int => void
-                        FORMAL SCOPE:
+                        (38,24) -> function lambda@(38,24) : int => void
+                        FORMAL SCOPE OF 'lambda@(38,24)':
                             (38,32) -> variable @k : int
                             LOCAL SCOPE:
                                 <empty>

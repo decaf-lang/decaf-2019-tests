@@ -6,8 +6,8 @@ GLOBAL SCOPE:
         FORMAL SCOPE OF 'genadd':
             (4,32) -> variable @v : int
             LOCAL SCOPE:
-                (5,16) -> lambda : int => int
-                FORMAL SCOPE:
+                (5,16) -> function lambda@(5,16) : int => int
+                FORMAL SCOPE OF 'lambda@(5,16)':
                     (5,25) -> variable @x : int
                     LOCAL SCOPE:
                         <empty>

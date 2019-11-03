@@ -38,7 +38,7 @@ GLOBAL SCOPE:
             (22,10) -> variable @this : class Main
             LOCAL SCOPE:
                 (23,17) -> variable a : class A
-                (25,19) -> lambda : int => int
+                (25,19) -> function lambda@(25,19) : int => int
                 (27,18) -> variable f1 : int => int
                 (28,18) -> variable f2 : int => int
                 (29,18) -> variable f3 : int => int
@@ -49,7 +49,7 @@ GLOBAL SCOPE:
                 (39,18) -> variable f10 : int => int
                 (40,18) -> variable f11 : int => int
                 (44,18) -> variable f14 : int => int
-                FORMAL SCOPE:
+                FORMAL SCOPE OF 'lambda@(25,19)':
                     (25,28) -> variable @x : int
                     LOCAL SCOPE:
                         <empty>
