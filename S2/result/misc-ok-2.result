@@ -1,0 +1,78 @@
+GLOBAL SCOPE:
+    (1,1) -> class A
+    (2,1) -> class B : A
+    (3,1) -> class C : A
+    (5,1) -> class Main
+    CLASS SCOPE OF 'A':
+        <empty>
+    CLASS SCOPE OF 'B':
+        <empty>
+    CLASS SCOPE OF 'C':
+        <empty>
+    CLASS SCOPE OF 'Main':
+        (6,17) -> STATIC function apply : ((int, bool[] => int, class B) => (int, class Main) => void, int) => void
+        (10,17) -> STATIC function main : () => void
+        FORMAL SCOPE OF 'apply':
+            (6,71) -> variable @f : (int, bool[] => int, class B) => (int, class Main) => void
+            (6,78) -> variable @x : int
+            LOCAL SCOPE:
+                (7,13) -> variable g : (int, bool[] => int, class B) => (int, class Main) => void
+        FORMAL SCOPE OF 'main':
+            <empty>
+            LOCAL SCOPE:
+                (11,13) -> variable test : int => (string[], ((class B, class B) => class A, class A) => class B, class B) => class A
+                (11,20) -> lambda : int => (string[], ((class B, class B) => class A, class A) => class B, class B) => class A
+                (24,13) -> variable arg : ((class B, class B) => class A, class A) => class B
+                (24,19) -> lambda : ((class B, class B) => class A, class A) => class B
+                (30,15) -> variable b : int[]
+                (31,13) -> variable len : int[] => () => int
+                (31,19) -> lambda : int[] => () => int
+                (33,12) -> lambda : int => int
+                (34,10) -> lambda : int => int
+                LAMBDA SCOPE:
+                    (11,29) -> variable @x : int
+                    LOCAL SCOPE:
+                        <empty>
+                        LOCAL SCOPE:
+                            (13,24) -> lambda : (string[], ((class A, class B) => class A, class B) => class A, class B) => class C
+                            LAMBDA SCOPE:
+                                (13,38) -> variable @a : string[]
+                                (13,85) -> variable @b : ((class A, class B) => class A, class B) => class A
+                                (13,96) -> variable @c : class B
+                                LOCAL SCOPE:
+                                    (14,23) -> lambda : (class A, class B) => class B
+                                    LAMBDA SCOPE:
+                                        (14,36) -> variable @u : class A
+                                        (14,47) -> variable @v : class B
+                                        LOCAL SCOPE:
+                                            <empty>
+                        LOCAL SCOPE:
+                            (18,24) -> lambda : (string[], ((class B, class A) => class B, class A) => class B, class A) => class B
+                            LAMBDA SCOPE:
+                                (18,38) -> variable @a : string[]
+                                (18,85) -> variable @b : ((class B, class A) => class B, class A) => class B
+                                (18,96) -> variable @c : class A
+                                LOCAL SCOPE:
+                                    (19,23) -> lambda : (class B, class A) => class B
+                                    LAMBDA SCOPE:
+                                        (19,36) -> variable @u : class B
+                                        (19,47) -> variable @v : class A
+                                        LOCAL SCOPE:
+                                            <empty>
+                LAMBDA SCOPE:
+                    (24,50) -> variable @a : (class B, class B) => class A
+                    (24,61) -> variable @b : class A
+                    LOCAL SCOPE:
+                        <empty>
+                LAMBDA SCOPE:
+                    (31,30) -> variable @arr : int[]
+                    LOCAL SCOPE:
+                        <empty>
+                LAMBDA SCOPE:
+                    (33,20) -> variable @x : int
+                    LOCAL SCOPE:
+                        <empty>
+                LAMBDA SCOPE:
+                    (34,19) -> variable @x : int
+                    LOCAL SCOPE:
+                        <empty>

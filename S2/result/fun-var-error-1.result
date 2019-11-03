@@ -1,0 +1,8 @@
+*** Error at (15,23): can not reference a non-static field 'f' from static method 'main'
+*** Error at (17,23): can not reference a non-static field 'vf' from static method 'main'
+*** Error at (24,11): field 'vf' of 'class A' not accessible here
+*** Error at (36,28): cannot access field 'f' from 'class Main'
+*** Error at (38,28): cannot access field 'vf' from 'class Main'
+*** Error at (42,26): field 'vf' of 'class A' not accessible here
+*** Error at (44,26): cannot access field 'f' from 'class A'
+*** Error at (46,26): cannot access field 'vf' from 'class A'
