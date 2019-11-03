@@ -29,50 +29,50 @@ GLOBAL SCOPE:
                 (31,19) -> lambda : int[] => () => int
                 (33,12) -> lambda : int => int
                 (34,10) -> lambda : int => int
-                LAMBDA SCOPE:
+                FORMAL SCOPE:
                     (11,29) -> variable @x : int
                     LOCAL SCOPE:
                         <empty>
                         LOCAL SCOPE:
                             (13,24) -> lambda : (string[], ((class A, class B) => class A, class B) => class A, class B) => class C
-                            LAMBDA SCOPE:
+                            FORMAL SCOPE:
                                 (13,38) -> variable @a : string[]
                                 (13,85) -> variable @b : ((class A, class B) => class A, class B) => class A
                                 (13,96) -> variable @c : class B
                                 LOCAL SCOPE:
                                     (14,23) -> lambda : (class A, class B) => class B
-                                    LAMBDA SCOPE:
+                                    FORMAL SCOPE:
                                         (14,36) -> variable @u : class A
                                         (14,47) -> variable @v : class B
                                         LOCAL SCOPE:
                                             <empty>
                         LOCAL SCOPE:
                             (18,24) -> lambda : (string[], ((class B, class A) => class B, class A) => class B, class A) => class B
-                            LAMBDA SCOPE:
+                            FORMAL SCOPE:
                                 (18,38) -> variable @a : string[]
                                 (18,85) -> variable @b : ((class B, class A) => class B, class A) => class B
                                 (18,96) -> variable @c : class A
                                 LOCAL SCOPE:
                                     (19,23) -> lambda : (class B, class A) => class B
-                                    LAMBDA SCOPE:
+                                    FORMAL SCOPE:
                                         (19,36) -> variable @u : class B
                                         (19,47) -> variable @v : class A
                                         LOCAL SCOPE:
                                             <empty>
-                LAMBDA SCOPE:
+                FORMAL SCOPE:
                     (24,50) -> variable @a : (class B, class B) => class A
                     (24,61) -> variable @b : class A
                     LOCAL SCOPE:
                         <empty>
-                LAMBDA SCOPE:
+                FORMAL SCOPE:
                     (31,30) -> variable @arr : int[]
                     LOCAL SCOPE:
                         <empty>
-                LAMBDA SCOPE:
+                FORMAL SCOPE:
                     (33,20) -> variable @x : int
                     LOCAL SCOPE:
                         <empty>
-                LAMBDA SCOPE:
+                FORMAL SCOPE:
                     (34,19) -> variable @x : int
                     LOCAL SCOPE:
                         <empty>

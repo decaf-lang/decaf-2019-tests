@@ -11,13 +11,13 @@ GLOBAL SCOPE:
                 (6,13) -> variable x : string
                 (7,13) -> variable f : int => void
                 (7,17) -> lambda : int => void
-                LAMBDA SCOPE:
+                FORMAL SCOPE:
                     (7,25) -> variable @a : int
                     LOCAL SCOPE:
                         (8,17) -> variable y : string
                         (10,17) -> variable g : (string, string) => string
                         (10,21) -> lambda : (string, string) => string
-                        LAMBDA SCOPE:
+                        FORMAL SCOPE:
                             (10,32) -> variable @xx : string
                             (10,43) -> variable @yy : string
                             LOCAL SCOPE:
@@ -31,13 +31,13 @@ GLOBAL SCOPE:
                 (34,13) -> variable m : class Main
                 (35,13) -> variable addx : () => void
                 (35,20) -> lambda : () => void
-                LAMBDA SCOPE:
+                FORMAL SCOPE:
                     <empty>
                     LOCAL SCOPE:
                         (37,17) -> variable y : int
                         (38,17) -> variable addy : int => void
                         (38,24) -> lambda : int => void
-                        LAMBDA SCOPE:
+                        FORMAL SCOPE:
                             (38,32) -> variable @k : int
                             LOCAL SCOPE:
                                 <empty>

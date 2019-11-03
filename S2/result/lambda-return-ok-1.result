@@ -15,7 +15,7 @@ GLOBAL SCOPE:
                 (24,17) -> lambda : int => int => int => int
                 (25,13) -> variable g : bool => (int => int) => (int => int) => void
                 (25,17) -> lambda : bool => (int => int) => (int => int) => void
-                LAMBDA SCOPE:
+                FORMAL SCOPE:
                     (3,28) -> variable @x : int
                     LOCAL SCOPE:
                         <empty>
@@ -23,13 +23,13 @@ GLOBAL SCOPE:
                             <empty>
                         LOCAL SCOPE:
                             <empty>
-                LAMBDA SCOPE:
+                FORMAL SCOPE:
                     (10,30) -> variable @x : int
                     LOCAL SCOPE:
                         <empty>
                         LOCAL SCOPE:
                             <empty>
-                LAMBDA SCOPE:
+                FORMAL SCOPE:
                     (15,31) -> variable @n : int
                     (15,40) -> variable @a : int[]
                     LOCAL SCOPE:
@@ -38,39 +38,39 @@ GLOBAL SCOPE:
                             (16,22) -> variable i : int
                             LOCAL SCOPE:
                                 <empty>
-                LAMBDA SCOPE:
+                FORMAL SCOPE:
                     (24,26) -> variable @x : int
                     LOCAL SCOPE:
                         (24,32) -> lambda : int => int => int
-                        LAMBDA SCOPE:
+                        FORMAL SCOPE:
                             (24,41) -> variable @y : int
                             LOCAL SCOPE:
                                 (24,47) -> lambda : int => int
-                                LAMBDA SCOPE:
+                                FORMAL SCOPE:
                                     (24,56) -> variable @z : int
                                     LOCAL SCOPE:
                                         <empty>
-                LAMBDA SCOPE:
+                FORMAL SCOPE:
                     (25,27) -> variable @z : bool
                     LOCAL SCOPE:
                         <empty>
                         LOCAL SCOPE:
                             (27,24) -> lambda : (int => int) => (int => int) => void
-                            LAMBDA SCOPE:
+                            FORMAL SCOPE:
                                 (27,38) -> variable @x : int => int
                                 LOCAL SCOPE:
                                     (27,44) -> lambda : (int => int) => void
-                                    LAMBDA SCOPE:
+                                    FORMAL SCOPE:
                                         (27,58) -> variable @y : int => int
                                         LOCAL SCOPE:
                                             <empty>
                         LOCAL SCOPE:
                             (31,24) -> lambda : (int => int) => (int => int) => void
-                            LAMBDA SCOPE:
+                            FORMAL SCOPE:
                                 (31,38) -> variable @y : int => int
                                 LOCAL SCOPE:
                                     (31,44) -> lambda : (int => int) => void
-                                    LAMBDA SCOPE:
+                                    FORMAL SCOPE:
                                         (31,58) -> variable @x : int => int
                                         LOCAL SCOPE:
                                             <empty>
