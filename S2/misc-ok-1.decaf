@@ -2,7 +2,7 @@
 
 class Main {
     static void main() {
-        var map = fun (int(int) f) => fun (int[] arr) {
+        var intarr_map = fun (int(int) f) => fun (int[] arr) {
             var l = arr.length();
             var rv = new int[l];
             for (var i = 0; i < l; i = i + 1) rv[i] = f(arr[i]);
@@ -24,7 +24,7 @@ class Main {
 
         var dotintint = fun (int(int) f) => fun (int(int) g) => fun (int x) => f(g(x));
 
-        var fuck = fun (int x) => fun (int y) => fun (int z) => fun(int w) => w;
+        var kcuf = fun (int x) => fun (int y) => fun (int z) => fun(int w) => x + y + z + w;
 
         var plus1 = fun (int x) => x+1;
         var times3 = fun (int x) => x*3;
@@ -34,8 +34,10 @@ class Main {
 
         print_arr(arr);
         var pred = fun (int x) => (x != 20) && (x != 200);
-        var pf = print_arr;
+        var pf = print_filter(pred);
         pf(arr);
+
+        var map = intarr_map;
         print_arr(map(fun (int x) => x+1)(arr));
         print_arr(map(plus1)(arr));
         print_arr(map(times3)(arr));

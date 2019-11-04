@@ -23,7 +23,7 @@ class Main {
 
         var dotintint = fun (int(int) f) => fun (int(int) g) => fun (int x) => f(g(x));
 
-        var fuck = fun (int x) => fun (int y) => fun (int z) => fun(int w) => w;
+        var kcuf = fun (int x) => fun (int y) => fun (int z) => fun(int w) => x + y + z + w + kcuf;
 
         var plus1 = fun (int x) => x+1;
         var times3 = fun (int x) => x*3;
@@ -35,6 +35,8 @@ class Main {
         var pred = fun (int x) => (x != 20) && (x != 200);
         var pf = print_arr(pred);
         pf(arr);
+
+        int[](int[])(int(int)) map = print_filter;
         print_arr(map(fun (int x) => x+1)(arr));
         print_arr(map(plus1)(arr));
         print_arr(map(times3)(arr));

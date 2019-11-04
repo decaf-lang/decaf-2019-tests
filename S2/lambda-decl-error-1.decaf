@@ -28,7 +28,6 @@ class Main {
                             var f3 = f2;
                             var f4 = f3;
                             var f5 = f4;
-                            var Main = 2333;
                             var x = new Main();
                             var u = v;
                             var val = f;

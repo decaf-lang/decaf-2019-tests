@@ -44,5 +44,25 @@ class Main {
         int(int) f13 = A.f;                 // bad
         int(int) f14 = A.sf;
         int(int) f15 = A.vf;                // bad
+
+        f = f15;                            // bad
+        sf = f14;                           // bad
+        vf = f13;
+
+        this.f = f12;                       // bad
+        this.sf = f11;                      // bad
+        this.vf = f10;
+
+        Main.f = f9;                        // bad
+        Main.sf = f8;                       // bad
+        Main.vf = f7;                       // bad
+
+        a.f = f6;                           // bad
+        a.sf = f5;                          // bad
+        a.vf = f4;                          // bad
+
+        A.f = f3;                           // bad
+        A.sf = f2;                          // bad
+        A.vf = f1;                          // bad
     }
 }

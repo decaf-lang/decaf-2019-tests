@@ -7,4 +7,3 @@
 *** Error at (16,19): incompatible argument 1: int[] => int[] given, int[] expected
 *** Error at (18,12): function 'foo' expects 3 argument(s) but 2 given
 *** Error at (18,23): int[] is not a callable type
-*** Error at (18,23): [] can only be applied to arrays

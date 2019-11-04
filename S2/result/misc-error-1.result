@@ -1,16 +1,7 @@
 *** Error at (13,33): undeclared variable 'l'
 *** Error at (19,33): undeclared variable 'a'
 *** Error at (20,23): undeclared variable 'a'
-*** Error at (20,23): [] can only be applied to arrays
+*** Error at (26,95): undeclared variable 'kcuf'
 *** Error at (36,13): cannot declare identifier 'pf' as void type
 *** Error at (36,28): incompatible argument 1: int => bool given, int[] expected
-*** Error at (38,19): undeclared variable 'map'
-*** Error at (39,19): undeclared variable 'map'
-*** Error at (40,19): undeclared variable 'map'
-*** Error at (41,19): undeclared variable 'map'
-*** Error at (43,19): undeclared variable 'map'
-*** Error at (49,19): undeclared variable 'map'
-*** Error at (50,19): undeclared variable 'map'
-*** Error at (51,19): undeclared variable 'map'
-*** Error at (52,19): undeclared variable 'map'
-*** Error at (54,19): undeclared variable 'map'
+*** Error at (39,36): incompatible operands: (int => int) => int[] => int[] = (int => bool) => int[] => void
