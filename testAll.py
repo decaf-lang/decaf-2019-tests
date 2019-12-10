@@ -179,7 +179,7 @@ TARGETS = {
     'PA1-B': (['S1', 'S1-LL'], ['abstract1.decaf', 'abstract3.decaf', 'lambdabad1.decaf'], PA1BTester),
     'PA2': (['S2'], [], PA2Tester),
     'PA3': (['S3'], [], PA3Tester),
-    'jvm': (['S3-JVM'], [], JVMTester),
+    'jvm': (['S3'], ['test_divisionbyzero1.decaf', 'test_divisionbyzero2.decaf'], JVMTester),
     'PA5': (['S3'], [], MipsTester),
 }
 
