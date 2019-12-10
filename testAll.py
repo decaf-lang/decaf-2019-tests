@@ -145,7 +145,7 @@ class JVMTester(Tester):
         result = self.get_result(test_case_name)
         sys.stdout.write('{}  ...  '.format(test_case_name))
         # compile
-        if run_decaf(['-t', 'jvm', '-d', bytecode_dir, self.get_test_case(test_case_name)]):
+        if run_decaf(['-t', 'PA3-JVM', '-d', bytecode_dir, self.get_test_case(test_case_name)]):
             # execute bytecode
             sys.stdout.write('JVM  ...  ')
             if run_jvm(bytecode_dir, output):
