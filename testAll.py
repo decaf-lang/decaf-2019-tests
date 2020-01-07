@@ -11,7 +11,7 @@ DECAF_JAR = os.path.join('..', 'build', 'libs', 'decaf.jar')
 # Scala:
 # DECAF_JAR = os.path.join('..', 'target', 'decaf.jar')
 
-TIMEOUT_SECONDS = 5
+TIMEOUT_SECONDS = 10
 SHOW_DIFF = True
 SHOW_COLOR = True
 diff = difflib.Differ()
@@ -27,6 +27,8 @@ def eq(expected: str, actual: str) -> bool:
                         for line in f.readlines() if line.rstrip() != '']
         if actual_lines[0].startswith('Loaded:'): # ignore spim first line
             actual_lines = actual_lines[1:]
+        elif len(actual_lines) >= 5 and actual_lines[4].startswith('Loaded:'):
+            actual_lines = actual_lines[5:] # ignore spim first 5 lines on Linux
 
     results = list(difflib.unified_diff(expected_lines, actual_lines, expected, actual))
     if len(results) == 0:
@@ -185,7 +187,7 @@ TARGETS = {
     'PA3': (['S3'], [], PA3Tester),
     'PA4': (['S4'], [], PA4Tester),
     'jvm': (['S3'], ['test_divisionbyzero1.decaf', 'test_divisionbyzero2.decaf'], JVMTester),
-    'PA5': (['S3'], [], MipsTester),
+    'PA5': (['S4'], [], MipsTester),
 }
 
 OPTIONS = ', '.join(TARGETS.keys())
