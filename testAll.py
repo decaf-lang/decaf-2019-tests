@@ -67,7 +67,7 @@ def run_jvm(bytecode_dir: str, output: str) -> bool:
 
 # running spim
 def run_spim(asm_file: str, output: str) -> bool:
-    return run(['spim', '-quiet', '-file', asm_file], output, True)
+    return run(['spim', '-quiet', '-ldata', '2000000',  '-file', asm_file], output, True)
 
 # tester
 class Tester:
